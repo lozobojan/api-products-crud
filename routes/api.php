@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/**
+ * Authorization Routes
+ */
 Route::group([
 
     'middleware' => 'api',
@@ -30,4 +33,7 @@ Route::group([
 
 });
 
+/**
+ * Product CRUD Routes
+ */
 Route::apiResource('products', ProductController::class);
