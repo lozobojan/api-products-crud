@@ -46,7 +46,7 @@ class ProductController extends Controller
      */
     public function update(UpdateProductRequest $request, Product $product): int
     {
-        return Product::query()->update($request->validated());
+        return $product->update($request->validated());
     }
 
     /**
